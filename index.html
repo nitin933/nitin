@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recession Prediction Based on Current Parameters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<style>
+body {
+  background-image: url('https://d3i6fh83elv35t.cloudfront.net/static/2020/11/2020-11-11T170848Z_662866022_RC251K9OQQPH_RTRMADP_3_USA-MARKETS-ELECTION-1200x800.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-opacity: 0.2;
+}
+table {
+    margin: 30px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div >
+
+        </div>
+        <h1 style="text-align: center;"> <kbd> RECESSION PREDICTION </kbd> </h1>
+        <form action="/predict" method="Get">
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Inflation    : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Inflation"></td>
+                    </tr>
+                </table>
+            </div >
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Unemployment Rate  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Unemployment_Rate"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Federal Funds  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Federal_Funds"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;;"><label> <h5> <b> Consumer Confidence Index  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Consumer_Confidence_Index"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Market Cap to GDP  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Market_Cap_to_GDP"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Average T10Y3M  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Average_T10Y3M"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Housing Price  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Housing_Price"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Debt to GDP  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Debt_to_GDP"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> Manufacturing Output  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="Manufacturing_Output"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <table>
+                    <tr>
+                        <td style="width: 240px;"><label> <h5> <b> M2V  : </b> </h5> </label>
+                        </td>
+                        <td style="text-align: right;"><input class="form-control" type="number" name="M2V"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-success" style="margin: 0px 250px 0px" type="Submit" >
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
